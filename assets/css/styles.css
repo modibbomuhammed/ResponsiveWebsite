@@ -5,19 +5,33 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
+    flex-direction: column;
     height: 100vh;
     background-image: url("../img/main.jpg");
+    
 }
 
-header ul {
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 80%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    flex: 1 1 20%;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-header li {
+nav li {
     padding: 10px;
 }
 
