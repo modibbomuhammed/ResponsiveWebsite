@@ -1,18 +1,52 @@
-body {
+/* General Styles */
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+html {
+    font: normal 16px sans-serif;
+    color:#555;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+a:hover {
+    opacity: 1;
+}
+/* END OF GENERAL STYLES */
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    /* flex-direction: column;
     height: 100vh;
     background-image: url("../img/main.jpg");
     background-size: cover;
     color: #fff;
-    font-size: 45px;
+    font-size: 45px; */
 }
 
+header h2 {
+    margin-top: 18px;
+    animation: fadeIn 2s ease-in 0.2s 1 forwards;
+}
+
+
+
+/*
 header section {
     display: flex;
     justify-content: center;
@@ -25,17 +59,12 @@ nav {
     justify-content: space-between;
     padding-left: 20px;
     flex: 1 1 20%;
-}
+} */
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
 
-nav li {
+/* nav li {
     padding: 10px;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 nav li a {
@@ -44,10 +73,6 @@ nav li a {
     animation: fadeIn 2s ease-in 0.2s 1 forwards;
 }
 
-.logo {
-    margin-top: 18px;
-    animation: fadeIn 2s ease-in 0.2s 1 forwards;
-}
 
 .position {
     animation: fadeIn2 2s ease-in 0.2s 1 forwards;
@@ -87,4 +112,4 @@ nav li a {
     100% {
         transform: translate(0, 0); 
     }
-}
+} */
