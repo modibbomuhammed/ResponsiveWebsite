@@ -12,8 +12,6 @@ html {
 
 nav  {
     list-style: none;
-    /* display: flex;
-    justify-content: space-between; */
 }
 
 a {
@@ -45,7 +43,6 @@ section {
 
 /* END OF GENERAL STYLES */
 
-
 /* HEADER STYLES */
 header {
     position: absolute;
@@ -57,11 +54,6 @@ header {
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
     color: #fff;
-    /* flex-direction: column;
-    height: 100vh;
-    background-size: cover;
-    color: #fff;
-    font-size: 45px; */
 }
 
 header h2 {
@@ -71,15 +63,11 @@ header h2 {
 nav {
     display: flex;
     margin-right: -15px;
-    /* justify-content: space-between;
-    padding-left: 20px;
-    flex: 1 1 20%; */
+    
 }
 
 nav li {
     margin: 0 15px;
-    /* padding: 10px; */
-    /* text-decoration: none; */
 }
 
 @keyframes fadein {
@@ -138,45 +126,46 @@ nav li {
     }
 }
 
-/*
-header section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 80%;
-}
 
- */
+/*  Destinations Styling */
 
-
-/* 
-
-nav li a {
-    text-decoration: none;
-    color: #fff;
-    animation: fadeIn 2s ease-in 0.2s 1 forwards;
-}
-
-
-.position {
-    animation: fadeIn2 2s ease-in 0.2s 1 forwards;
-}
-
-.position h2 {
+.destinations-message {
     text-align: center;
-    animation: fadeIn 2s ease-in 0.2s 1 forwards, fadeIn2 2s ease-in 2s forwards;
 }
 
-.position h5 {
-    animation: fadeIn 2s ease-in 0.2s 1 forwards;
+.destinations-message h2 {
+    margin-bottom: 40px;
 }
 
-.position p {
+.destinations-message p {
+    margin-bottom: 20px;
+}
+
+.destinations-message p::after {
+    content: '';
+    display: inherit;
+    width: 40%;
+    margin: 10px auto;
+    border-top: 1px solid #DFDFDF;
+}
+
+
+.photo-gallery {
     display: flex;
-    justify-content: center;
-    animation: fadeIn 2s ease-in 0.2s 1 forwards;
+    flex-direction: column;
 }
 
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
+.gallery-item {
+    width: 35%;
+    object-fit: cover;
+}
 
- */
+.long-image {
+    width: 60%;
+}
