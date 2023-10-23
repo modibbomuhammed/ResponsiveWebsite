@@ -40,6 +40,9 @@ section {
     padding: 100px 80px;
 }
 
+section:not(.hero):nth-child(even) {
+    background-color: #f5f5f5;
+}
 
 /* END OF GENERAL STYLES */
 
@@ -144,14 +147,14 @@ hr {
     margin-top: 50px;
 }
 
-.destinations h3 {
+section h3 {
     text-transform: capitalize;
     font: bold 32px "Open Sans", sans-serif;
     margin-bottom: 30px;
     text-align: center;
 }
 
-.destinations p {
+section p {
     max-width: 775px;
     line-height: 2;
     padding: 0 20px;
@@ -174,4 +177,41 @@ hr {
 .destinations .grid li.large {
     flex-basis: 70%;
 }
+
+
+/* Packages Section */
+
+.features .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.features .grid li i {
+    color: #8c8eff;
+}
+
+.features .grid li h4 {
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
